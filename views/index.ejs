@@ -4,8 +4,9 @@
     <div class="container main">
         <h2><%=blog.title%> </h2>
         <img src="<%=blog.image%>">
-        <%=blog.body%>
+        <p><%=blog.body.substring(0,100)%> . . .</p>
         <%=blog.created%>
+        <a href="/blogs/<%=blog._id%>">More Info</a>
     </div>
 <%})%>
 <% include partials/footer.ejs%>
