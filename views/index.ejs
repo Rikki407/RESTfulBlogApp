@@ -1,8 +1,7 @@
 <% include partials/header.ejs%>
 
-<h1>Index page</h1>
 <%blogs.forEach(function (blog) {%>
-    <div>
+    <div class="container main">
         <h2><%=blog.title%> </h2>
         <img src="<%=blog.image%>">
         <%=blog.body%>
